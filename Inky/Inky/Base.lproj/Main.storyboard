@@ -14,13 +14,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0I-eh-F60">
+                                <rect key="frame" x="20.5" y="44" width="373" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-94-VHI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="add" id="26s-RX-nM3">
+                                        <inset key="imageInsets" minX="320" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-1r-fM4">
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="T57-0o-26z"/>
+                                    <tabBarItem systemItem="more" id="het-Xh-QI4"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bX8-1r-fM4" secondAttribute="bottom" id="7LC-NX-uJI"/>
+                            <constraint firstItem="bX8-1r-fM4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7dN-20-sj4"/>
+                            <constraint firstItem="j0I-eh-F60" firstAttribute="top" secondItem="2ck-94-VHI" secondAttribute="top" id="Dyb-ag-GfN"/>
+                            <constraint firstItem="j0I-eh-F60" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="InF-lN-N8D"/>
+                            <constraint firstItem="j0I-eh-F60" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LG2-gN-YEs"/>
+                            <constraint firstItem="2ck-94-VHI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lfo-1X-ehS"/>
+                            <constraint firstItem="j0I-eh-F60" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Qkh-e8-NhQ"/>
+                            <constraint firstItem="j0I-eh-F60" firstAttribute="bottom" secondItem="bX8-1r-fM4" secondAttribute="bottom" id="ZE4-fO-UfK"/>
+                            <constraint firstItem="2ck-94-VHI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="epY-In-wjf"/>
+                            <constraint firstItem="2ck-94-VHI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jWH-ff-Tph"/>
+                            <constraint firstItem="bX8-1r-fM4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rfu-le-1cJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="134"/>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
     </scenes>
 </document>
