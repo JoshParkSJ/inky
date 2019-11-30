@@ -7,20 +7,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inky" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" userLabel="HomeViewController" customClass="ViewController" customModule="Inky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0I-eh-F60">
-                                <rect key="frame" x="20.5" y="44" width="373" height="818"/>
+                                <rect key="frame" x="20.5" y="0.0" width="373" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ck-94-VHI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="add" id="26s-RX-nM3">
                                         <inset key="imageInsets" minX="320" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -28,11 +29,11 @@
                                 </items>
                             </toolbar>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-1r-fM4">
-                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <rect key="frame" x="0.0" y="725" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="T57-0o-26z"/>
-                                    <tabBarItem systemItem="more" id="het-Xh-QI4"/>
+                                    <tabBarItem systemItem="bookmarks" id="T57-0o-26z"/>
+                                    <tabBarItem id="het-Xh-QI4"/>
                                 </items>
                             </tabBar>
                         </subviews>
@@ -52,10 +53,32 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KAS-G8-48d"/>
+                    <connections>
+                        <segue destination="PV8-Mh-Nij" kind="show" identifier="RecordSegue" id="f2T-Y9-qf7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--RecordViewCotnroller-->
+        <scene sceneID="TnR-Gj-tnU">
+            <objects>
+                <viewController id="PV8-Mh-Nij" userLabel="RecordViewCotnroller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jLg-CZ-rVG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VG7-LA-6U8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zRJ-eF-4Mi"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="HomeSegue" id="Lei-wk-MIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7S9-DV-dlm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="134"/>
         </scene>
     </scenes>
 </document>
