@@ -16,6 +16,8 @@
 		11542B15239309A00011131C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11542B13239309A00011131C /* Main.storyboard */; };
 		11542B17239309A30011131C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11542B16239309A30011131C /* Assets.xcassets */; };
 		11542B1A239309A30011131C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11542B18239309A30011131C /* LaunchScreen.storyboard */; };
+		119A4F8823935B0F0080D150 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A4F8723935B0F0080D150 /* TableViewCell.swift */; };
+		119A4F8A23935D0D0080D150 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119A4F8923935D0D0080D150 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		11542B16239309A30011131C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11542B19239309A30011131C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11542B1B239309A30011131C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119A4F8723935B0F0080D150 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		119A4F8923935D0D0080D150 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 				11542B16239309A30011131C /* Assets.xcassets */,
 				11542B18239309A30011131C /* LaunchScreen.storyboard */,
 				11542B1B239309A30011131C /* Info.plist */,
+				119A4F8723935B0F0080D150 /* TableViewCell.swift */,
+				119A4F8923935D0D0080D150 /* Cell.swift */,
 			);
 			path = Inky;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			files = (
 				110B069A23933FD40093659F /* CircleButton.swift in Sources */,
 				11542B12239309A00011131C /* HomeViewController.swift in Sources */,
+				119A4F8A23935D0D0080D150 /* Cell.swift in Sources */,
 				11542B0E239309A00011131C /* AppDelegate.swift in Sources */,
+				119A4F8823935B0F0080D150 /* TableViewCell.swift in Sources */,
 				11542B10239309A00011131C /* SceneDelegate.swift in Sources */,
 				110B0696239331860093659F /* RecordViewController.swift in Sources */,
 			);
