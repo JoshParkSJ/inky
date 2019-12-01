@@ -45,8 +45,9 @@ class RecordViewController: UIViewController, AVAudioPlayerDelegate {
     
     func summarize() {
         summaryButton.isHidden = false
-        
     }
+    
+    
     
     func requestSpeechAuth() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -88,4 +89,7 @@ class RecordViewController: UIViewController, AVAudioPlayerDelegate {
         requestSpeechAuth()
     }
     
+    @IBAction func summaryBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "summaryFromRecordingSegue", sender: self)
+    }
 }

@@ -52,5 +52,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("hi")
 //        SEGUE TO SUMMARY SCREEN
+        performSegue(withIdentifier: "summarySegue", sender: self)
     }
 }

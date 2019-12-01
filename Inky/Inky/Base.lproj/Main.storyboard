@@ -74,6 +74,10 @@
                                 <state key="normal" title="SUMMARIZE">
                                     <color key="titleColor" red="0.59286996339999998" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="summaryBtnPressed:" destination="Goh-Ht-Yjd" eventType="touchUpInside" id="3dc-Ub-a6N"/>
+                                    <segue destination="71I-4g-RyA" kind="show" identifier="summaryFromRecordingSegue" id="r4e-ll-MZN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -174,11 +178,44 @@
                     <navigationItem key="navigationItem" id="ZOS-0n-oBW"/>
                     <connections>
                         <outlet property="tableView" destination="AlR-n6-a4x" id="gaT-WM-gnD"/>
+                        <segue destination="71I-4g-RyA" kind="show" identifier="summarySegue" id="Vv7-ah-4hY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVc-Nn-HFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2084.057971014493" y="-592.63392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MaO-xe-9vg">
+            <objects>
+                <viewController id="71I-4g-RyA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Mh-Fm-dAu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="srh-EF-1zb">
+                                <rect key="frame" x="20" y="124.5" width="374" height="559"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="srh-EF-1zb" firstAttribute="centerY" secondItem="Yow-XO-123" secondAttribute="centerY" id="AqF-Mm-2gf"/>
+                            <constraint firstItem="srh-EF-1zb" firstAttribute="centerX" secondItem="Yow-XO-123" secondAttribute="centerX" id="Cap-aC-hor"/>
+                            <constraint firstItem="srh-EF-1zb" firstAttribute="height" secondItem="8Mh-Fm-dAu" secondAttribute="height" multiplier="0.664062" id="V3R-DL-qvo"/>
+                            <constraint firstItem="srh-EF-1zb" firstAttribute="width" secondItem="8Mh-Fm-dAu" secondAttribute="width" multiplier="0.903382" id="yuI-On-3CJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yow-XO-123"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f0y-rx-rNu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9M-Vm-ekI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3144.9275362318845" y="-536.38392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cDN-qY-2d1">
@@ -223,4 +260,7 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="mic.fill" catalog="system" width="54" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="r4e-ll-MZN"/>
+    </inferredMetricsTieBreakers>
 </document>
