@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110B0694239324650093659F /* Recording.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110B0693239324640093659F /* Recording.storyboard */; };
+		110B0696239331860093659F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B0695239331860093659F /* RecordViewController.swift */; };
+		110B069A23933FD40093659F /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110B069923933FD40093659F /* CircleButton.swift */; };
+		110B069D23934E470093659F /* recording.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 110B069C23934E470093659F /* recording.m4a */; };
 		11542B0E239309A00011131C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542B0D239309A00011131C /* AppDelegate.swift */; };
 		11542B10239309A00011131C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542B0F239309A00011131C /* SceneDelegate.swift */; };
-		11542B12239309A00011131C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542B11239309A00011131C /* ViewController.swift */; };
+		11542B12239309A00011131C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542B11239309A00011131C /* HomeViewController.swift */; };
 		11542B15239309A00011131C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11542B13239309A00011131C /* Main.storyboard */; };
 		11542B17239309A30011131C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11542B16239309A30011131C /* Assets.xcassets */; };
 		11542B1A239309A30011131C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11542B18239309A30011131C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		110B0693239324640093659F /* Recording.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recording.storyboard; sourceTree = "<group>"; };
+		110B0695239331860093659F /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		110B069923933FD40093659F /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		110B069C23934E470093659F /* recording.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = recording.m4a; sourceTree = "<group>"; };
 		11542B0A239309A00011131C /* Inky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11542B0D239309A00011131C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11542B0F239309A00011131C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11542B11239309A00011131C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11542B11239309A00011131C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		11542B14239309A00011131C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11542B16239309A30011131C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11542B19239309A30011131C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,12 +43,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		110B0692239314CE0093659F /* SubScreens */ = {
+		110B069723933F820093659F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				110B0693239324640093659F /* Recording.storyboard */,
+				110B069923933FD40093659F /* CircleButton.swift */,
 			);
-			path = SubScreens;
+			path = View;
+			sourceTree = "<group>";
+		};
+		110B069B23934E0D0093659F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				110B069C23934E470093659F /* recording.m4a */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		11542B01239309A00011131C = {
@@ -66,10 +78,12 @@
 		11542B0C239309A00011131C /* Inky */ = {
 			isa = PBXGroup;
 			children = (
-				110B0692239314CE0093659F /* SubScreens */,
+				110B069B23934E0D0093659F /* resources */,
+				110B069723933F820093659F /* View */,
 				11542B0D239309A00011131C /* AppDelegate.swift */,
+				11542B11239309A00011131C /* HomeViewController.swift */,
+				110B0695239331860093659F /* RecordViewController.swift */,
 				11542B0F239309A00011131C /* SceneDelegate.swift */,
-				11542B11239309A00011131C /* ViewController.swift */,
 				11542B13239309A00011131C /* Main.storyboard */,
 				11542B16239309A30011131C /* Assets.xcassets */,
 				11542B18239309A30011131C /* LaunchScreen.storyboard */,
@@ -136,9 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110B0694239324650093659F /* Recording.storyboard in Resources */,
 				11542B1A239309A30011131C /* LaunchScreen.storyboard in Resources */,
 				11542B17239309A30011131C /* Assets.xcassets in Resources */,
+				110B069D23934E470093659F /* recording.m4a in Resources */,
 				11542B15239309A00011131C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11542B12239309A00011131C /* ViewController.swift in Sources */,
+				110B069A23933FD40093659F /* CircleButton.swift in Sources */,
+				11542B12239309A00011131C /* HomeViewController.swift in Sources */,
 				11542B0E239309A00011131C /* AppDelegate.swift in Sources */,
 				11542B10239309A00011131C /* SceneDelegate.swift in Sources */,
+				110B0696239331860093659F /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
