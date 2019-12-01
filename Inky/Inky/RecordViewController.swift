@@ -16,6 +16,7 @@ class RecordViewController: UIViewController, AVAudioPlayerDelegate {
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
 
+
     @IBOutlet weak var transcriptionTextField: UITextView!
     @IBOutlet weak var activitySpinner: UIActivityIndicatorView!
     
@@ -29,6 +30,8 @@ class RecordViewController: UIViewController, AVAudioPlayerDelegate {
            super.viewDidLoad()
         activitySpinner.isHidden = true
         summaryButton.isHidden = true
+        transcriptionTextField.isUserInteractionEnabled = false
+        
         
 ////        SETTING UP SESSION (swift guy tutorial)
 //        recordingSession = AVAudioSession.sharedInstance()

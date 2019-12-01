@@ -26,9 +26,15 @@ class HomeViewController: UIViewController {
     func createArray() -> [Cell] {
         var tempLabels: [Cell] = []
         
-        let label1 = Cell(label: "Recording 1")
+//        ADD MORE LABELS HERE
+        let label1 = Cell(label: "Lecture 1: Renewable Energy")
+        let label2 = Cell(label: "Lecture 2: Data Structures & Algorithms")
+        let label3 = Cell(label: "Lecture 3: Nuclea Fusion")
         
         tempLabels.append(label1)
+        tempLabels.append(label2)
+        tempLabels.append(label3)
+        
         
         return tempLabels
     }
@@ -50,7 +56,6 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("hi")
 //        SEGUE TO SUMMARY SCREEN
         performSegue(withIdentifier: "summarySegue", sender: self)
     }
